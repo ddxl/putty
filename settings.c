@@ -1145,7 +1145,7 @@ void load_open_settings(settings_r *sesskey, Conf *conf)
         sfree(buf2);
     }
     gppb(sesskey, "RawCNP", false, conf, CONF_rawcnp);
-    gppb(sesskey, "UTF8linedraw", false, conf, CONF_utf8linedraw);
+    gppb(sesskey, "UTF8linedraw", true, conf, CONF_utf8linedraw);
     gppb(sesskey, "PasteRTF", false, conf, CONF_rtf_paste);
     gppi(sesskey, "MouseIsXterm", 0, conf, CONF_mouse_is_xterm);
     gppb(sesskey, "RectSelect", false, conf, CONF_rect_select);

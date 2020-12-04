@@ -1017,7 +1017,7 @@ void load_open_settings(settings_r *sesskey, Conf *conf)
     gppb(sesskey, "SshNoAuth", false, conf, CONF_ssh_no_userauth);
     gppb(sesskey, "SshBanner", true, conf, CONF_ssh_show_banner);
     gppb(sesskey, "AuthTIS", false, conf, CONF_try_tis_auth);
-    gppb(sesskey, "AuthKI", true, conf, CONF_try_ki_auth);
+    gppb(sesskey, "AuthKI", false, conf, CONF_try_ki_auth);
 #ifndef NO_GSSAPI
     gppb(sesskey, "AuthGSSAPI", true, conf, CONF_try_gssapi_auth);
     gppb(sesskey, "AuthGSSAPIKEX", true, conf, CONF_try_gssapi_kex);

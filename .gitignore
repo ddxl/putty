@@ -153,3 +153,6 @@
 /windows/*.msi
 /windows/*.wixobj
 /windows/*.wixpdb
+.vs
+Debug
+Release

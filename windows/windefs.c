@@ -9,7 +9,7 @@
 FontSpec *platform_default_fontspec(const char *name)
 {
     if (!strcmp(name, "Font"))
-        return fontspec_new("Consolas", false, 12, ANSI_CHARSET);
+        return fontspec_new("Cascadia Mono", false, 12, ANSI_CHARSET);
     else
         return fontspec_new("", false, 0, 0);
 }

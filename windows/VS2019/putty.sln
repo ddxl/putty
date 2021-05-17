@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30320.27
+VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pageant", "pageant\pageant.vcxproj", "{27E8F930-2567-4FDC-82C1-0662AF3CDF6D}"
 EndProject
@@ -9,6 +9,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pscp", "pscp\pscp.vcxproj", "{26D200F3-250A-494F-AAA4-C992EC4345AA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "psftp", "psftp\psftp.vcxproj", "{3CAA8123-13FE-450D-BFE7-FCDA524D6830}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "psocks", "psocks\psocks.vcxproj", "{0CE7217E-7277-408E-ADD3-4E2F6072486E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "putty", "putty\putty.vcxproj", "{8F44624A-D188-4188-B9AA-5F99F20723E1}"
 EndProject
@@ -40,6 +42,10 @@ Global
 		{3CAA8123-13FE-450D-BFE7-FCDA524D6830}.Debug|x86.Build.0 = Debug|Win32
 		{3CAA8123-13FE-450D-BFE7-FCDA524D6830}.Release|x86.ActiveCfg = Release|Win32
 		{3CAA8123-13FE-450D-BFE7-FCDA524D6830}.Release|x86.Build.0 = Release|Win32
+		{0CE7217E-7277-408E-ADD3-4E2F6072486E}.Debug|x86.ActiveCfg = Debug|Win32
+		{0CE7217E-7277-408E-ADD3-4E2F6072486E}.Debug|x86.Build.0 = Debug|Win32
+		{0CE7217E-7277-408E-ADD3-4E2F6072486E}.Release|x86.ActiveCfg = Release|Win32
+		{0CE7217E-7277-408E-ADD3-4E2F6072486E}.Release|x86.Build.0 = Release|Win32
 		{8F44624A-D188-4188-B9AA-5F99F20723E1}.Debug|x86.ActiveCfg = Debug|Win32
 		{8F44624A-D188-4188-B9AA-5F99F20723E1}.Debug|x86.Build.0 = Debug|Win32
 		{8F44624A-D188-4188-B9AA-5F99F20723E1}.Release|x86.ActiveCfg = Release|Win32
@@ -61,6 +67,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D8FA6328-EC5B-420C-8251-B16C908261B0}
+		SolutionGuid = {71635855-6D71-49CB-B0FB-313236A4FD41}
 	EndGlobalSection
 EndGlobal

@@ -48,7 +48,6 @@
     <OutDir>.\Debug\</OutDir>
     <IntDir>.\Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -144,8 +143,10 @@
     <ClCompile Include="..\..\..\be_all_s.c" />
     <ClCompile Include="..\..\..\be_misc.c" />
     <ClCompile Include="..\..\..\callback.c" />
+    <ClCompile Include="..\..\..\clicons.c" />
     <ClCompile Include="..\..\..\cmdline.c" />
     <ClCompile Include="..\..\..\conf.c" />
+    <ClCompile Include="..\..\..\console.c" />
     <ClCompile Include="..\..\..\cproxy.c" />
     <ClCompile Include="..\..\..\ecc.c" />
     <ClCompile Include="..\..\..\errsock.c" />
@@ -184,7 +185,9 @@
     <ClCompile Include="..\..\..\ssh2userauth.c" />
     <ClCompile Include="..\..\..\sshaes.c" />
     <ClCompile Include="..\..\..\ssharcf.c" />
+    <ClCompile Include="..\..\..\sshargon2.c" />
     <ClCompile Include="..\..\..\sshauxcrypt.c" />
+    <ClCompile Include="..\..\..\sshblake2.c" />
     <ClCompile Include="..\..\..\sshblowf.c" />
     <ClCompile Include="..\..\..\sshccp.c" />
     <ClCompile Include="..\..\..\sshcommon.c" />
@@ -205,10 +208,13 @@
     <ClCompile Include="..\..\..\sshsh256.c" />
     <ClCompile Include="..\..\..\sshsh512.c" />
     <ClCompile Include="..\..\..\sshsha.c" />
+    <ClCompile Include="..\..\..\sshsha3.c" />
     <ClCompile Include="..\..\..\sshshare.c" />
+    <ClCompile Include="..\..\..\sshutils.c" />
     <ClCompile Include="..\..\..\sshverstring.c" />
     <ClCompile Include="..\..\..\sshzlib.c" />
     <ClCompile Include="..\..\..\stripctrl.c" />
+    <ClCompile Include="..\..\..\supdup.c" />
     <ClCompile Include="..\..\..\telnet.c" />
     <ClCompile Include="..\..\..\timing.c" />
     <ClCompile Include="..\..\..\tree234.c" />
@@ -217,6 +223,7 @@
     <ClCompile Include="..\..\..\wcwidth.c" />
     <ClCompile Include="..\..\..\wildcard.c" />
     <ClCompile Include="..\..\wincapi.c" />
+    <ClCompile Include="..\..\wincliloop.c" />
     <ClCompile Include="..\..\wincons.c" />
     <ClCompile Include="..\..\windefs.c" />
     <ClCompile Include="..\..\wingss.c" />
@@ -234,6 +241,7 @@
     <ClCompile Include="..\..\winplink.c" />
     <ClCompile Include="..\..\winproxy.c" />
     <ClCompile Include="..\..\winsecur.c" />
+    <ClCompile Include="..\..\winselcli.c" />
     <ClCompile Include="..\..\winser.c" />
     <ClCompile Include="..\..\winshare.c" />
     <ClCompile Include="..\..\winstore.c" />
@@ -244,6 +252,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\charset\charset.h" />
+    <ClInclude Include="..\..\..\console.h" />
     <ClInclude Include="..\..\..\defs.h" />
     <ClInclude Include="..\..\..\ecc.h" />
     <ClInclude Include="..\..\..\empty.h" />

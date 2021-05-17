@@ -48,7 +48,6 @@
     <OutDir>.\Debug\</OutDir>
     <IntDir>.\Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -87,6 +86,9 @@
       <OutputFile>.\Release\pageant.exe</OutputFile>
       <AdditionalDependencies>advapi32.lib;comdlg32.lib;gdi32.lib;imm32.lib;ole32.lib;shell32.lib;user32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Manifest>
+      <AdditionalManifestFiles>%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -141,15 +143,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\aqsync.c" />
+    <ClCompile Include="..\..\..\be_misc.c" />
+    <ClCompile Include="..\..\..\callback.c" />
     <ClCompile Include="..\..\..\conf.c" />
     <ClCompile Include="..\..\..\ecc.c" />
+    <ClCompile Include="..\..\..\errsock.c" />
     <ClCompile Include="..\..\..\marshal.c" />
     <ClCompile Include="..\..\..\memory.c" />
     <ClCompile Include="..\..\..\misc.c" />
     <ClCompile Include="..\..\..\mpint.c" />
     <ClCompile Include="..\..\..\pageant.c" />
     <ClCompile Include="..\..\..\sshaes.c" />
+    <ClCompile Include="..\..\..\sshargon2.c" />
     <ClCompile Include="..\..\..\sshauxcrypt.c" />
+    <ClCompile Include="..\..\..\sshblake2.c" />
     <ClCompile Include="..\..\..\sshdes.c" />
     <ClCompile Include="..\..\..\sshdss.c" />
     <ClCompile Include="..\..\..\sshecc.c" />
@@ -160,17 +167,25 @@
     <ClCompile Include="..\..\..\sshsh256.c" />
     <ClCompile Include="..\..\..\sshsh512.c" />
     <ClCompile Include="..\..\..\sshsha.c" />
+    <ClCompile Include="..\..\..\sshsha3.c" />
     <ClCompile Include="..\..\..\stripctrl.c" />
     <ClCompile Include="..\..\..\tree234.c" />
     <ClCompile Include="..\..\..\utils.c" />
     <ClCompile Include="..\..\..\version.c" />
     <ClCompile Include="..\..\..\wcwidth.c" />
+    <ClCompile Include="..\..\wincapi.c" />
+    <ClCompile Include="..\..\winhandl.c" />
     <ClCompile Include="..\..\winhelp.c" />
+    <ClCompile Include="..\..\winhsock.c" />
     <ClCompile Include="..\..\winmisc.c" />
     <ClCompile Include="..\..\winmiscs.c" />
+    <ClCompile Include="..\..\winnet.c" />
+    <ClCompile Include="..\..\winnpc.c" />
+    <ClCompile Include="..\..\winnps.c" />
     <ClCompile Include="..\..\winpgnt.c" />
     <ClCompile Include="..\..\winpgntc.c" />
     <ClCompile Include="..\..\winsecur.c" />
+    <ClCompile Include="..\..\winselgui.c" />
     <ClCompile Include="..\..\winutils.c" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +200,7 @@
     <ClInclude Include="..\..\..\mpint_i.h" />
     <ClInclude Include="..\..\..\network.h" />
     <ClInclude Include="..\..\..\pageant.h" />
+    <ClInclude Include="..\..\..\proxy.h" />
     <ClInclude Include="..\..\..\putty.h" />
     <ClInclude Include="..\..\..\puttymem.h" />
     <ClInclude Include="..\..\..\puttyps.h" />
@@ -196,8 +212,10 @@
     <ClInclude Include="..\..\..\tree234.h" />
     <ClInclude Include="..\..\..\unix\unix.h" />
     <ClInclude Include="..\..\..\version.h" />
+    <ClInclude Include="..\..\pageant-rc.h" />
     <ClInclude Include="..\..\rcstuff.h" />
     <ClInclude Include="..\..\win_res.h" />
+    <ClInclude Include="..\..\wincapi.h" />
     <ClInclude Include="..\..\winhelp.h" />
     <ClInclude Include="..\..\winsecur.h" />
     <ClInclude Include="..\..\winstuff.h" />
